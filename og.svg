@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1816"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#3a3632" stroke-width="2"/>
+  <!-- Logo -->
+  <text x="80" y="220" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="88" font-weight="700" letter-spacing="-2" fill="#e0d8c8">env<tspan fill="#c8a84e">lint</tspan></text>
+  <!-- Tagline -->
+  <text x="82" y="278" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="26" fill="#8f8577">.env file validator — browser-side, nothing uploaded</text>
+  <!-- Divider -->
+  <line x1="80" y1="310" x2="1120" y2="310" stroke="#3a3632" stroke-width="1"/>
+  <!-- Feature list -->
+  <text x="80" y="370" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="22" fill="#5aad78">✓</text>
+  <text x="110" y="370" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="22" fill="#8f8577">missing values</text>
+  <text x="370" y="370" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="22" fill="#5aad78">✓</text>
+  <text x="400" y="370" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="22" fill="#8f8577">duplicate keys</text>
+  <text x="660" y="370" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="22" fill="#5aad78">✓</text>
+  <text x="690" y="370" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="22" fill="#8f8577">exposed secrets</text>
+  <!-- Example env block -->
+  <rect x="80" y="400" width="1040" height="160" rx="6" fill="#242220" stroke="#3a3632" stroke-width="1"/>
+  <text x="110" y="435" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#8f8577"># database</text>
+  <text x="110" y="462" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#c8a84e">DATABASE_URL</text><text x="352" y="462" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#e0d8c8">=postgresql://user:pass@localhost/app</text>
+  <text x="110" y="489" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#c8a84e">SECRET_KEY</text><text x="296" y="489" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#c84e4e">=</text><text x="310" y="489" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#c84e4e">(empty)</text>
+  <text x="110" y="516" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#c8a84e">API_KEY</text><text x="222" y="516" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#8f8577">=sk_live_••••••</text><rect x="420" y="500" width="68" height="22" rx="3" fill="#3a2f19"/><text x="428" y="516" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="14" fill="#c8a84e">secret</text>
+  <!-- URL -->
+  <text x="80" y="610" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="20" fill="#3a3632">envlint.com</text>
+</svg>

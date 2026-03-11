@@ -9,6 +9,11 @@
   <meta property="og:description" content="Paste your .env file to instantly find missing values, duplicate keys, and exposed secrets. 100% browser-side — nothing is uploaded.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://envlint.com">
+  <meta property="og:image" content="https://envlint.com/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EnvLint — .env File Validator &amp; Linter">
+  <meta name="twitter:description" content="Paste your .env file to instantly find missing values, duplicate keys, and exposed secrets. 100% browser-side — nothing is uploaded or transmitted.">
+  <meta name="twitter:image" content="https://envlint.com/og.svg">
   <link rel="canonical" href="https://envlint.com">
 
   <script type="application/ld+json">
@@ -452,6 +457,7 @@ DEBUG=true"
       <button class="btn-clear" id="clear-btn">clear</button>
       <label class="upload-label" for="file-input">upload file</label>
       <input type="file" id="file-input" accept=".env,.txt,text/plain">
+      <span style="font-size:0.72rem;color:var(--muted);margin-left:auto;">⌘↵ to lint</span>
     </div>
   </div>
 
@@ -907,6 +913,16 @@ DEBUG=true"
 
   document.getElementById('env-input').addEventListener('keydown', function(e) {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') run();
+  });
+
+  // Auto-lint on paste or input with debounce
+  var debounceTimer;
+  document.getElementById('env-input').addEventListener('input', function() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function() {
+      var text = document.getElementById('env-input').value;
+      if (text.trim().length > 10) run();
+    }, 600);
   });
 
   document.getElementById('clear-btn').addEventListener('click', function() {
