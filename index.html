@@ -569,32 +569,32 @@ DEBUG=true"
       <h2>Frequently asked questions</h2>
 
       <div class="faq-item">
-        <div class="faq-q">Is my .env file uploaded to a server?</div>
+        <h3 class="faq-q">Is my .env file uploaded to a server?</h3>
         <div class="faq-a">No. EnvLint runs entirely in your browser using JavaScript. Your .env content never leaves your machine — there is no server, no database, and no logging of any kind.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">What is a .env file?</div>
+        <h3 class="faq-q">What is a .env file?</h3>
         <div class="faq-a">A .env file stores environment variables — configuration values like database URLs, API keys, and feature flags — for a software project. It is read at startup by frameworks like Node.js (via dotenv), Ruby on Rails, Django, and others. The file lives in the project root and should never be committed to version control.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">What does "missing value" mean?</div>
+        <h3 class="faq-q">What does "missing value" mean?</h3>
         <div class="faq-a">A missing value means the key exists in the file but has nothing after the equals sign — for example, <code>DATABASE_URL=</code>. This is almost always a configuration error. The application will see an empty string or undefined for that variable.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Why are duplicate keys a problem?</div>
+        <h3 class="faq-q">Why are duplicate keys a problem?</h3>
         <div class="faq-a">Most .env loaders silently use the last (or first) occurrence when a key appears more than once, discarding the other. This can cause subtle bugs when you think you're setting a variable but a later duplicate overrides it without any warning.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Does EnvLint support multiline values?</div>
+        <h3 class="faq-q">Does EnvLint support multiline values?</h3>
         <div class="faq-a">Yes. EnvLint handles quoted values that span multiple lines, values containing # characters, and values with embedded equals signs, following common dotenv conventions.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">What is a .env.example file?</div>
+        <h3 class="faq-q">What is a .env.example file?</h3>
         <div class="faq-a">A .env.example is a safe-to-commit template of your .env with all sensitive values replaced by placeholder text. It documents which environment variables your project requires. EnvLint generates one automatically from your input.</div>
       </div>
     </div>
