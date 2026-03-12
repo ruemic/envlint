@@ -80,6 +80,22 @@
       },
       {
         "@type": "Question",
+        "name": "What does \"missing value\" mean in EnvLint?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A missing value means the key exists in the file but has nothing after the equals sign — for example, DATABASE_URL=. This is almost always a configuration error. The application will see an empty string or undefined for that variable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are duplicate keys in a .env file a problem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most .env loaders silently use the last (or first) occurrence when a key appears more than once, discarding the other. This can cause subtle bugs when you think you're setting a variable but a later duplicate overrides it without any warning."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Does EnvLint support multi-line values?",
         "acceptedAnswer": {
           "@type": "Answer",
